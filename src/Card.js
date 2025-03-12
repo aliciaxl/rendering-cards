@@ -11,13 +11,13 @@ export default function Card(props) {
   return props.info.map(item => (
     <ul>
         <div id={item.id} className="card">
-            <img className="card--image" src={images[item.id]} alt={item.title}/><br /><br />
-            <div>{item.title}</div><br />
-            <div><strong>Average Cost ${item.price}</strong> / LB</div><br />
-            <div>Kingdom: {item.stats.kingdom}</div><br />
-            <div>Family: {item.stats.family}</div><br />
-            <div>Genus: {item.stats.genus}</div><br />
-            <div>Origin: {item.location}</div>
+            <img className="card--image" src={images[item.id]} alt={item.title}/><br />
+            <p>{item.title}</p>
+            <p><span className="bold">Average Cost ${item.price}</span> / LB</p>
+            <p>Kingdom: {item.stats.kingdom}</p>
+            <p>Family: {item.stats.family}</p>
+            <p>Genus: {item.stats.genus}</p>
+            <p>Origin: {item.location}</p>
         </div>
     </ul>
   ));
